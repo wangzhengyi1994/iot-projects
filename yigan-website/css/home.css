@@ -374,8 +374,8 @@ img {
   width: 480px;
   height: 94px;
   padding: 20px;
-  background: var(--gray-1);
-  border-radius: var(--radius-lg);
+  background: #fff;
+  border-radius: 0;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -385,17 +385,11 @@ img {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  background: var(--color-primary);
-  border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.overlay-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
+.overlay-icon img {
+  width: 40px;
+  height: 40px;
 }
 
 .overlay-text {
@@ -405,130 +399,131 @@ img {
 }
 
 .overlay-text h4 {
-  font-family: inherit;
   font-size: 16px;
+  line-height: 24px;
   color: var(--color-bg-dark);
   font-weight: 400;
 }
 
 .overlay-text p {
-  font-family: inherit;
   font-size: 14px;
-  color: var(--color-text-2);
   line-height: 22px;
+  color: var(--color-text-2);
 }
 
-/* === Section 3: Two-Column === */
-.two-col-section {
+/* === Section 3: Stats Cards Grid === */
+.stats-grid-section {
   width: 100%;
   height: 600px;
   padding: 40px 0;
 }
 
-.two-col-section .container {
+.stats-grid-section .container {
   height: 520px;
+}
+
+.stats-grid {
   display: flex;
+  gap: 20px;
+  height: 520px;
+  border-radius: 4px;
+}
+
+/* 左栏 800px */
+.stats-col-left {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.two-col-left {
+/* 右栏 620px */
+.stats-col-right {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 大卡片 800x240 */
+.stat-card-large {
   width: 800px;
-  height: 520px;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-xl);
-  padding: 60px;
+  height: 240px;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 下方两个小卡片行 */
+.stats-row {
+  display: flex;
+  gap: 20px;
+  height: 260px;
+}
+
+/* 小卡片 390x240 */
+.stat-card-small {
+  width: 390px;
+  height: 240px;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 右栏中等卡片 620x250 */
+.stat-card-medium {
+  width: 620px;
+  height: 250px;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 卡片内文字区 */
+.stat-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 32px;
+  gap: 12px;
 }
 
-.two-col-left h3 {
-  font-family: inherit;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-text-1);
-}
-
-.two-col-left p {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-text-2);
-}
-
-.two-col-stats {
-  display: flex;
-  gap: 48px;
-}
-
-.two-col-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.two-col-stat .number {
-  font-family: inherit;
+.stat-num {
   font-size: 48px;
   line-height: 56px;
-  font-weight: 500;
-  color: var(--color-primary);
+  font-weight: 400;
+  color: var(--gray-10);
 }
 
-.two-col-stat .label {
-  font-family: inherit;
-  font-size: 14px;
-  color: var(--color-text-3);
-}
-
-.two-col-right {
-  width: 620px;
-  height: 520px;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-xl);
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-}
-
-.two-col-right h3 {
-  font-family: inherit;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-text-1);
-}
-
-.two-col-right p {
-  font-family: inherit;
+.stat-label {
   font-size: 16px;
   line-height: 24px;
-  color: var(--color-text-2);
+  color: var(--gray-6);
 }
 
-.service-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+/* 卡片内插图 */
+.stat-card-large .stat-card-illust {
+  width: 200px;
+  height: 160px;
 }
 
-.service-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: inherit;
-  font-size: 16px;
-  color: var(--color-text-2);
+.stat-card-small .stat-card-illust,
+.stat-card-medium .stat-card-illust {
+  width: 160px;
+  height: 160px;
 }
 
-.service-item .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  flex-shrink: 0;
+.stat-card-illust img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* === Section 4: Why Choose Us === */
