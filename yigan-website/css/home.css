@@ -591,6 +591,102 @@ img {
   gap: 16px;
 }
 
+/* === Section 5.5: Hardware Showcase === */
+.hardware-showcase {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.hardware-showcase .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hw-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hw-tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--gray-3);
+}
+
+.hw-tab-btn {
+  padding: 12px 32px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-6);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.hw-tab-btn:hover {
+  color: var(--color-text-1);
+}
+
+.hw-tab-btn.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.hw-tab-panel {
+  display: none;
+}
+
+.hw-tab-panel.active {
+  display: block;
+}
+
+.hw-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.hw-product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--gray-3);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hw-product-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.hw-product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.hw-product-info {
+  padding: 24px;
+}
+
+.hw-product-info h4 {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-1);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.hw-product-info p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text-3);
+}
+
 /* === Sections 6-13: Product Blocks === */
 .product-block {
   width: 100%;

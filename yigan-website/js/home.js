@@ -26,6 +26,19 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(el);
   });
 
+  // Hardware tab switching
+  const tabBtns = document.querySelectorAll('.hw-tab-btn');
+  const tabPanels = document.querySelectorAll('.hw-tab-panel');
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var tab = btn.getAttribute('data-tab');
+      tabBtns.forEach(function (b) { b.classList.remove('active'); });
+      tabPanels.forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('tab-' + tab).classList.add('active');
+    });
+  });
+
   // Header shadow on scroll
   const header = document.querySelector('.header');
   window.addEventListener('scroll', function () {
