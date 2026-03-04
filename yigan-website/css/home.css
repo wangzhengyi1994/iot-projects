@@ -670,21 +670,15 @@ img {
 }
 
 .hw-product-info {
-  padding: 24px;
+  padding: 16px 24px;
 }
 
 .hw-product-info h4 {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--color-text-1);
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.hw-product-info p {
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--color-text-3);
+  font-weight: 400;
+  text-align: center;
 }
 
 /* === Sections 6-13: Product Blocks === */
