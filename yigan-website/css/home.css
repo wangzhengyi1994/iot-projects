@@ -412,100 +412,93 @@ img {
 }
 
 /* === Section 3: Two-Column Info === */
-.info-columns {
+/* === Section 3: Stats Cards Grid === */
+.stats-grid-section {
   width: 100%;
   padding: 40px 0;
 }
 
-.info-columns .container {
+.stats-grid {
   display: flex;
+  gap: 20px;
+  height: 520px;
+}
+
+.stats-col-left {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.info-col {
-  background: #f2f7ff;
-  border-radius: var(--radius-lg);
-  padding: 60px;
+.stats-col-right {
+  width: 620px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
-.info-col-left {
-  width: 800px;
-  flex-shrink: 0;
+.sg-card {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.info-col-right {
+.sg-large {
+  height: 240px;
+}
+
+.sg-row {
+  display: flex;
+  gap: 20px;
   flex: 1;
 }
 
-.info-col-title {
-  font-family: inherit;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-text-1);
-  font-weight: 400;
+.sg-small {
+  width: 390px;
+  height: 240px;
 }
 
-.info-col-desc {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-text-2);
+.sg-medium {
+  flex: 1;
 }
 
-.info-stats-row {
-  display: flex;
-  gap: 48px;
-  margin-top: 16px;
-}
-
-.info-stat {
+.sg-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}
-
-.info-stat-num {
-  font-family: inherit;
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 400;
-  color: var(--color-primary);
-}
-
-.info-stat-label {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--color-text-3);
-}
-
-.info-service-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 8px;
-}
-
-.info-service-list li {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-text-2);
-  display: flex;
-  align-items: center;
   gap: 12px;
 }
 
-.info-service-list li::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-primary);
+.sg-num {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  color: var(--gray-10);
+}
+
+.sg-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-6);
+}
+
+.sg-illust {
+  width: 160px;
+  height: 160px;
   flex-shrink: 0;
+}
+
+.sg-large .sg-illust {
+  width: 200px;
+}
+
+.sg-illust img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* === Section 4: Why Choose Us === */
