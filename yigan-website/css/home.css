@@ -411,75 +411,101 @@ img {
   color: var(--color-text-2);
 }
 
-/* === Section 3: Stats Cards Grid === */
-.stats-grid-section {
+/* === Section 3: Two-Column Info === */
+.info-columns {
   width: 100%;
   padding: 40px 0;
 }
 
-.stats-grid-section .container {
-  background: var(--gray-1);
-  border-radius: 4px;
-  padding: 20px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.info-columns .container {
+  display: flex;
   gap: 20px;
 }
 
-/* 跨2列的大卡片 */
-.sg-span2 {
-  grid-column: span 2;
-}
-
-/* 单个卡片 */
-.sg-card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 240px;
-}
-
-/* 文字区 */
-.sg-text {
+.info-col {
+  background: #f2f7ff;
+  border-radius: var(--radius-lg);
+  padding: 60px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 
-.sg-num {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 400;
-  color: var(--gray-10);
-}
-
-.sg-label {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--gray-6);
-}
-
-/* 插图区 */
-.sg-illust {
-  width: 160px;
-  height: 160px;
+.info-col-left {
+  width: 800px;
   flex-shrink: 0;
 }
 
-.sg-illust-wide {
-  width: 200px;
+.info-col-right {
+  flex: 1;
 }
 
-.sg-illust img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.info-col-title {
+  font-family: inherit;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-text-1);
+  font-weight: 400;
+}
+
+.info-col-desc {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-2);
+}
+
+.info-stats-row {
+  display: flex;
+  gap: 48px;
+  margin-top: 16px;
+}
+
+.info-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-stat-num {
+  font-family: inherit;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.info-stat-label {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text-3);
+}
+
+.info-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.info-service-list li {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-service-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  flex-shrink: 0;
 }
 
 /* === Section 4: Why Choose Us === */
@@ -497,6 +523,8 @@ img {
 .section-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 16px;
 }
 
@@ -527,6 +555,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text-2);
+  text-align: center;
 }
 
 .why-choose-image {
@@ -542,44 +571,41 @@ img {
   object-fit: cover;
 }
 
-.why-choose-stats {
+/* Advantage Grid (2x2) */
+.advantage-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
-.stat-card {
-  flex: 1;
-  background: var(--gray-1);
-  border-radius: var(--radius-lg);
+.advantage-card {
+  width: 700px;
+  min-height: 236px;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
 }
 
-.stat-card .stat-icon {
+.advantage-card img {
   width: 48px;
   height: 48px;
 }
 
-.stat-card .stat-icon img {
-  width: 48px;
-  height: 48px;
+.advantage-card h4 {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text-1);
+  font-weight: 400;
 }
 
-.stat-card .stat-number {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 500;
-  color: var(--gray-10);
-}
-
-.stat-card .stat-label {
+.advantage-card p {
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
-  color: var(--gray-6);
+  color: var(--color-text-2);
+  font-weight: 400;
 }
 
 /* === Section 5: Products Title === */
