@@ -164,7 +164,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 html {
@@ -172,8 +172,8 @@ html {
 }
 
 body {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
-  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-weight: normal;
   color: var(--color-text-1);
   background: var(--color-bg-1);
   overflow-x: hidden;
@@ -205,7 +205,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -266,7 +266,7 @@ img {
 }
 
 .header-logo {
-  font-family: 'DingTalk JinBuTi', 'Noto Sans SC', sans-serif;
+  font-family: 'DingTalk JinBuTi', -apple-system, 'PingFang SC', sans-serif;
   font-size: 20px;
   color: var(--color-text-1);
   white-space: nowrap;
@@ -279,7 +279,7 @@ img {
 }
 
 .header-nav a {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-2);
   transition: color 0.3s;
@@ -296,7 +296,7 @@ img {
 }
 
 .header-phone {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-1);
 }
@@ -309,7 +309,7 @@ img {
   color: #fff;
   border: none;
   cursor: pointer;
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   transition: opacity 0.3s;
 }
 
@@ -334,14 +334,14 @@ img {
 }
 
 .banner-title {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 56px;
   line-height: 64px;
   color: var(--color-text-1);
 }
 
 .banner-subtitle {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 24px;
   line-height: 32px;
   color: var(--color-text-2);
@@ -405,14 +405,14 @@ img {
 }
 
 .overlay-text h4 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   color: var(--color-bg-dark);
   font-weight: 400;
 }
 
 .overlay-text p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-2);
   line-height: 22px;
@@ -444,14 +444,14 @@ img {
 }
 
 .two-col-left h3 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 32px;
   line-height: 40px;
   color: var(--color-text-1);
 }
 
 .two-col-left p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text-2);
@@ -469,15 +469,15 @@ img {
 }
 
 .two-col-stat .number {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-primary);
 }
 
 .two-col-stat .label {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-3);
 }
@@ -495,14 +495,14 @@ img {
 }
 
 .two-col-right h3 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 32px;
   line-height: 40px;
   color: var(--color-text-1);
 }
 
 .two-col-right p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text-2);
@@ -518,7 +518,7 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   color: var(--color-text-2);
 }
@@ -550,11 +550,11 @@ img {
 }
 
 .section-header h2 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 36px;
   line-height: 44px;
   color: var(--color-text-1);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .section-header .blue-line {
@@ -565,14 +565,14 @@ img {
 }
 
 .section-header .subtitle {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text-2);
 }
 
 .why-choose-body {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text-2);
@@ -625,15 +625,15 @@ img {
 }
 
 .stat-card .stat-number {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-primary);
 }
 
 .stat-card .stat-label {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-3);
   line-height: 22px;
@@ -712,14 +712,14 @@ img {
 }
 
 .product-text h3 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 36px;
   line-height: 44px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .product-text p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 20px;
   line-height: 28px;
 }
@@ -734,7 +734,7 @@ img {
   gap: 8px;
   border: none;
   border-radius: 4px;
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   cursor: pointer;
   margin-top: 16px;
@@ -786,7 +786,7 @@ img {
 }
 
 .cta-title span {
-  font-family: 'DingTalk JinBuTi', 'Noto Sans SC', sans-serif;
+  font-family: 'DingTalk JinBuTi', -apple-system, 'PingFang SC', sans-serif;
   font-size: 48px;
   font-weight: 400;
   color: #000;
@@ -810,10 +810,10 @@ img {
 }
 
 .cta-metric .metric-value {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-primary);
 }
 
@@ -823,7 +823,7 @@ img {
 }
 
 .cta-metric .metric-label {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 20px;
   color: var(--color-text-1);
 }
@@ -882,14 +882,14 @@ img {
 }
 
 .guarantee-text h5 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   color: var(--color-text-1);
   font-weight: 400;
 }
 
 .guarantee-text p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-2);
 }
@@ -922,7 +922,7 @@ img {
 }
 
 .footer-link-group h6 {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-1);
   font-weight: 400;
@@ -931,7 +931,7 @@ img {
 
 .footer-link-group a {
   display: block;
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 12px;
   color: var(--color-text-3);
   line-height: 20px;
@@ -949,7 +949,7 @@ img {
 }
 
 .footer-copyright p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 12px;
   line-height: 20px;
   color: var(--color-text-3);
@@ -963,13 +963,13 @@ img {
 }
 
 .footer-contact p {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-1);
 }
 
 .footer-contact .contact-value {
-  font-family: 'OPPOSans', 'Noto Sans SC', sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: var(--color-text-2);
 }
