@@ -11,21 +11,24 @@
   font-style: normal;
 }
 
-/* === Color Scale (based on #0363e9) === */
+/* === Design Tokens (from Figma) === */
+/* 主色只需改 --primary-6, 其余色阶跟随调整 */
 :root {
-  /* 主色色阶 1-10 (从浅到深) */
-  --blue-1: #e8f3ff;
-  --blue-2: #bedaff;
-  --blue-3: #94bfff;
-  --blue-4: #6aa1ff;
-  --blue-5: #4080ff;
-  --blue-6: #0363e9;
-  --blue-7: #0352c9;
-  --blue-8: #0340a4;
-  --blue-9: #022e7a;
-  --blue-10: #011d52;
+  /* ---- 基础色板 Light ---- */
 
-  /* 中性色色阶 1-10 */
+  /* 主色 primary (基于 #0363e9) */
+  --primary-1: #e8f2ff;
+  --primary-2: #c8dfff;
+  --primary-3: #9cc6ff;
+  --primary-4: #6eabfe;
+  --primary-5: #4292fe;
+  --primary-6: #0363e9;
+  --primary-7: #1568d8;
+  --primary-8: #1257b4;
+  --primary-9: #0e4691;
+  --primary-10: #0b3772;
+
+  /* 中性色 gray */
   --gray-1: #f7f8fa;
   --gray-2: #f2f3f5;
   --gray-3: #e5e6eb;
@@ -34,44 +37,120 @@
   --gray-6: #86909c;
   --gray-7: #6b7785;
   --gray-8: #4e5969;
-  --gray-9: #333d4b;
+  --gray-9: #272e3b;
   --gray-10: #1d2129;
 
   /* 功能色 */
-  --success-1: #e8ffea;
-  --success-6: #00b42a;
-  --warning-1: #fff7e8;
-  --warning-6: #ff7d00;
-  --danger-1: #ffece8;
-  --danger-6: #f53f3f;
+  --red-1: #ffece8;
+  --red-3: #fbaca3;
+  --red-6: #f53f3f;
+  --red-7: #cb272d;
 
-  /* 语义别名 */
-  --color-primary: var(--blue-6);
-  --color-primary-light: var(--blue-1);
-  --color-primary-hover: var(--blue-5);
-  --color-primary-active: var(--blue-7);
-  --color-primary-disabled: var(--blue-3);
+  --orange-red-6: #f77234;
 
-  --color-text-1: var(--gray-10);   /* 标题 #1d2129 */
-  --color-text-2: var(--gray-8);    /* 正文 #4e5969 */
-  --color-text-3: var(--gray-6);    /* 辅助 #86909c */
-  --color-text-4: var(--gray-4);    /* 占位 #c9cdd4 */
+  --orange-1: #fff7e8;
+  --orange-3: #ffcf8b;
+  --orange-6: #ff7d00;
+  --orange-7: #d25f00;
 
-  --color-bg-1: #fff;
-  --color-bg-2: var(--gray-1);
-  --color-bg-3: var(--gray-2);
+  --gold-6: #f7ba1e;
+
+  --green-1: #e8ffea;
+  --green-3: #7be188;
+  --green-6: #00b42a;
+  --green-7: #009a29;
+
+  --cyan-6: #0fc6c2;
+
+  --blue-1: #e8f7ff;
+  --blue-6: #3491fa;
+
+  --purple-6: #722ed1;
+
+  --pink-purple-6: #d91ad9;
+
+  --magenta-6: #f5319d;
+
+  /* ---- 语义 Token (Light) ---- */
+
+  /* 文字 */
+  --color-text-1: var(--gray-10);   /* #1d2129 标题 */
+  --color-text-2: var(--gray-8);    /* #4e5969 正文 */
+  --color-text-3: var(--gray-6);    /* #86909c 辅助 */
+  --color-text-4: var(--gray-4);    /* #c9cdd4 占位 */
+  --color-text-white: #ffffff;
+
+  /* 主色语义 */
+  --color-primary: var(--primary-6);
+  --color-primary-light: var(--primary-1);
+  --color-primary-hover: var(--primary-5);
+  --color-primary-active: var(--primary-7);
+  --color-primary-disabled: var(--primary-3);
+
+  /* 功能色语义 */
+  --color-success: var(--green-6);
+  --color-success-light: var(--green-1);
+  --color-success-disabled: var(--green-3);
+  --color-warning: var(--orange-6);
+  --color-warning-light: var(--orange-1);
+  --color-warning-disabled: var(--orange-3);
+  --color-danger: var(--red-6);
+  --color-danger-light: var(--red-1);
+  --color-danger-disabled: var(--red-3);
+
+  /* 背景 */
+  --color-bg-1: #ffffff;
+  --color-bg-2: #ffffff;
+  --color-bg-3: #ffffff;
+  --color-bg-4: #ffffff;
+  --color-bg-5: #003acb;
+  --color-bg-white: #ffffff;
   --color-bg-dark: #0b1d30;
+  --color-bg-page: #000d2d;     /* 深色页面背景 */
 
-  --color-border: var(--gray-3);
-  --color-border-light: var(--gray-2);
+  /* 填充 */
+  --color-fill-1: var(--gray-1);
+  --color-fill-2: var(--gray-2);
+  --color-fill-3: var(--gray-3);
+  --color-fill-4: var(--gray-4);
 
-  /* 圆角 (Arco 规范) */
+  /* 边框 */
+  --color-border-1: var(--gray-2);
+  --color-border-2: var(--gray-3);
+  --color-border-3: var(--gray-4);
+  --color-border-4: var(--gray-6);
+
+  /* 遮罩 */
+  --color-mask: rgba(29, 33, 41, 0.60);
+
+  /* 白色透明度 */
+  --white-10: rgba(255, 255, 255, 0.10);
+  --white-20: rgba(255, 255, 255, 0.20);
+  --white-40: rgba(255, 255, 255, 0.40);
+  --white-60: rgba(255, 255, 255, 0.60);
+  --white-80: rgba(255, 255, 255, 0.80);
+  --white-100: #ffffff;
+
+  /* ---- 组件 Token ---- */
+  --btn-primary-disabled-text: #ffffff;
+  --btn-brand-disabled-bg: var(--primary-3);
+  --btn-success-disabled-bg: var(--green-3);
+  --btn-danger-disabled-bg: var(--red-3);
+  --btn-warning-disabled-bg: var(--orange-3);
+  --tooltip-bg: var(--gray-10);
+  --pagination-bg: var(--primary-1);
+
+  /* ---- 旧变量兼容 (逐步迁移后可删) ---- */
+  --color-border: var(--color-border-2);
+  --color-border-light: var(--color-border-1);
+
+  /* 圆角 */
   --radius-sm: 2px;
   --radius-md: 4px;
   --radius-lg: 8px;
   --radius-xl: 12px;
 
-  /* 阴影 (Arco 规范) */
+  /* 阴影 */
   --shadow-1: 0 2px 5px rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 10px rgba(0, 0, 0, 0.08);
   --shadow-3: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -523,7 +602,7 @@ img {
 .stat-card .stat-icon {
   width: 48px;
   height: 48px;
-  background: var(--blue-1);
+  background: var(--primary-1);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -769,7 +848,7 @@ img {
 .guarantee-icon {
   width: 40px;
   height: 40px;
-  background: var(--blue-1);
+  background: var(--primary-1);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;

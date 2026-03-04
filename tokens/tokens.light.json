@@ -1,0 +1,53 @@
+{
+  "text": {
+    "1": { "$type": "color", "$value": "{Light.gray.gray-10}" },
+    "2": { "$type": "color", "$value": "{Light.gray.gray-8}" },
+    "3": { "$type": "color", "$value": "{Light.gray.gray-6}" },
+    "4": { "$type": "color", "$value": "{Light.gray.gray-4}" },
+    "white": { "$type": "color", "$value": "{Light.white}" }
+  },
+  "primary": {
+    "1": { "$type": "color", "$value": "{Light.primary.primary-1}" },
+    "2": { "$type": "color", "$value": "{Light.primary.primary-2}" },
+    "3": { "$type": "color", "$value": "{Light.primary.primary-3}" },
+    "4": { "$type": "color", "$value": "{Light.primary.primary-4}" },
+    "5": { "$type": "color", "$value": "{Light.primary.primary-5}" },
+    "6": { "$type": "color", "$value": "{Light.primary.primary-6}" },
+    "7": { "$type": "color", "$value": "{Light.primary.primary-7}" }
+  },
+  "success": {
+    "1": { "$type": "color", "$value": "{Light.green.green-1}" },
+    "6": { "$type": "color", "$value": "{Light.green.green-6}" },
+    "7": { "$type": "color", "$value": "{Light.green.green-7}" }
+  },
+  "warning": {
+    "1": { "$type": "color", "$value": "{Light.orange.orange-1}" },
+    "6": { "$type": "color", "$value": "{Light.orange.orange-6}" },
+    "7": { "$type": "color", "$value": "{Light.orange.orange-7}" }
+  },
+  "danger": {
+    "1": { "$type": "color", "$value": "{Light.red.red-1}" },
+    "6": { "$type": "color", "$value": "{Light.red.red-6}" },
+    "7": { "$type": "color", "$value": "{Light.red.red-7}" }
+  },
+  "bg": {
+    "1": { "$type": "color", "$value": "#ffffff" },
+    "2": { "$type": "color", "$value": "#ffffff" },
+    "3": { "$type": "color", "$value": "#ffffff" },
+    "4": { "$type": "color", "$value": "#ffffff" },
+    "5": { "$type": "color", "$value": "#003acb" },
+    "white": { "$type": "color", "$value": "#ffffff" }
+  },
+  "fill": {
+    "1": { "$type": "color", "$value": "{Light.gray.gray-1}" },
+    "2": { "$type": "color", "$value": "{Light.gray.gray-2}" },
+    "3": { "$type": "color", "$value": "{Light.gray.gray-3}" },
+    "4": { "$type": "color", "$value": "{Light.gray.gray-4}" }
+  },
+  "border": {
+    "1": { "$type": "color", "$value": "{Light.gray.gray-2}" },
+    "2": { "$type": "color", "$value": "{Light.gray.gray-3}" },
+    "3": { "$type": "color", "$value": "{Light.gray.gray-4}" },
+    "4": { "$type": "color", "$value": "{Light.gray.gray-6}" }
+  }
+}
