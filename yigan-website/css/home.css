@@ -414,113 +414,69 @@ img {
 /* === Section 3: Stats Cards Grid === */
 .stats-grid-section {
   width: 100%;
-  height: 600px;
   padding: 40px 0;
 }
 
 .stats-grid-section .container {
-  height: 520px;
+  background: var(--gray-1);
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .stats-grid {
-  display: flex;
-  gap: 20px;
-  height: 520px;
-  border-radius: 4px;
-}
-
-/* 左栏 800px */
-.stats-col-left {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* 右栏 620px */
-.stats-col-right {
-  width: 620px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* 跨2列的大卡片 */
+.sg-span2 {
+  grid-column: span 2;
 }
 
-/* 大卡片 800x240 */
-.stat-card-large {
-  width: 800px;
-  height: 240px;
-  background: #fafafa;
+/* 单个卡片 */
+.sg-card {
+  background: #fff;
   border-radius: 8px;
   padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 240px;
 }
 
-/* 下方两个小卡片行 */
-.stats-row {
-  display: flex;
-  gap: 20px;
-  height: 260px;
-}
-
-/* 小卡片 390x240 */
-.stat-card-small {
-  width: 390px;
-  height: 240px;
-  background: #fafafa;
-  border-radius: 8px;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* 右栏中等卡片 620x250 */
-.stat-card-medium {
-  width: 620px;
-  height: 250px;
-  background: #fafafa;
-  border-radius: 8px;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* 卡片内文字区 */
-.stat-card-content {
+/* 文字区 */
+.sg-text {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.stat-num {
+.sg-num {
   font-size: 48px;
   line-height: 56px;
   font-weight: 400;
   color: var(--gray-10);
 }
 
-.stat-label {
+.sg-label {
   font-size: 16px;
   line-height: 24px;
   color: var(--gray-6);
 }
 
-/* 卡片内插图 */
-.stat-card-large .stat-card-illust {
-  width: 200px;
-  height: 160px;
-}
-
-.stat-card-small .stat-card-illust,
-.stat-card-medium .stat-card-illust {
+/* 插图区 */
+.sg-illust {
   width: 160px;
   height: 160px;
+  flex-shrink: 0;
 }
 
-.stat-card-illust img {
+.sg-illust-wide {
+  width: 200px;
+}
+
+.sg-illust img {
   width: 100%;
   height: 100%;
   object-fit: contain;
