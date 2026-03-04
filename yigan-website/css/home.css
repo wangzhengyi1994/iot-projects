@@ -593,45 +593,37 @@ img {
 }
 
 .stat-card {
+  flex: 1;
   background: var(--gray-1);
-  border-radius: var(--radius-xl);
-  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .stat-card .stat-icon {
   width: 48px;
   height: 48px;
-  background: var(--primary-1);
-  border-radius: var(--radius-xl);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.stat-card .stat-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--color-primary);
+.stat-card .stat-icon img {
+  width: 48px;
+  height: 48px;
 }
 
 .stat-card .stat-number {
-  font-family: inherit;
   font-size: 48px;
   line-height: 56px;
   font-weight: 500;
-  color: var(--color-primary);
+  color: var(--gray-10);
 }
 
 .stat-card .stat-label {
-  font-family: inherit;
-  font-size: 14px;
-  color: var(--color-text-3);
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-6);
 }
 
 /* === Section 5: Products Title === */
