@@ -860,20 +860,17 @@ img {
 }
 
 .guarantee-icon {
-  width: 40px;
-  height: 40px;
-  background: var(--primary-1);
-  border-radius: var(--radius-lg);
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
-.guarantee-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--color-primary);
+.guarantee-icon img {
+  width: 32px;
+  height: 32px;
 }
 
 .guarantee-text h5 {
@@ -911,29 +908,34 @@ img {
   gap: 40px;
 }
 
-.footer-links {
+.footer-nav-row {
   display: flex;
-  gap: 60px;
+  align-items: center;
+  height: 40px;
+  gap: 80px;
 }
 
-.footer-link-group h6 {
-  font-family: inherit;
-  font-size: 14px;
+.footer-logo {
+  font-family: 'DingTalk JinBuTi', -apple-system, 'PingFang SC', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   color: var(--color-text-1);
-  font-weight: 400;
-  margin-bottom: 12px;
+  white-space: nowrap;
 }
 
-.footer-link-group a {
-  display: block;
-  font-family: inherit;
-  font-size: 12px;
-  color: var(--color-text-3);
-  line-height: 20px;
+.footer-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text-1);
   transition: color 0.3s;
 }
 
-.footer-link-group a:hover {
+.footer-nav a:hover {
   color: var(--color-primary);
 }
 
@@ -944,7 +946,6 @@ img {
 }
 
 .footer-copyright p {
-  font-family: inherit;
   font-size: 12px;
   line-height: 20px;
   color: var(--color-text-3);
@@ -957,16 +958,18 @@ img {
   gap: 12px;
 }
 
-.footer-contact p {
-  font-family: inherit;
+.footer-contact-row {
+  display: flex;
   font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-contact-row span:first-child {
   color: var(--color-text-1);
 }
 
-.footer-contact .contact-value {
-  font-family: inherit;
-  font-size: 14px;
-  color: var(--color-text-2);
+.footer-contact-row .contact-value {
+  color: var(--color-text-1);
 }
 
 /* === Scroll Animation === */
