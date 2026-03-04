@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>业务案例 - 一感智能科技</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .case-filter { display: flex; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+    .case-filter .filter-btn {
+      padding: 8px 24px; font-size: 14px; font-weight: 500;
+      border-radius: 20px; border: 1px solid var(--border);
+      background: #fff; color: var(--text); cursor: pointer;
+      transition: all var(--transition);
+    }
+    .case-filter .filter-btn:hover,
+    .case-filter .filter-btn.active {
+      background: var(--primary); color: #fff; border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="../index.html" class="logo"><span>一感智能科技</span></a>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav class="nav">
+      <a href="../index.html" class="nav-item">首页</a>
+      <div class="nav-item">产品中心 <span class="arrow">▼</span>
+        <div class="dropdown">
+          <a href="products/iot-platform.html">物联网平台</a>
+          <a href="products/smart-gateway.html">智能网关</a>
+          <a href="products/sensor.html">传感设备</a>
+          <a href="products/energy.html">能源管理系统</a>
+        </div>
+      </div>
+      <a href="cases.html" class="nav-item active">业务案例</a>
+      <div class="nav-item">新闻服务 <span class="arrow">▼</span>
+        <div class="dropdown">
+          <a href="news.html">公司新闻</a>
+          <a href="industry.html">行业动态</a>
+        </div>
+      </div>
+      <a href="support.html" class="nav-item">在线支持</a>
+      <a href="about.html" class="nav-item">关于我们</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>400-XXX-XXXX</span>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-sm">获取方案</a>
+    </div>
+  </div>
+</header>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>业务案例</h1>
+    <p>深耕多个行业领域，以实际成果见证物联网技术的无限可能</p>
+  </div>
+</section>
+
+<!-- Case Filter & Grid -->
+<section class="section">
+  <div class="container">
+    <div class="case-filter fade-in">
+      <button class="filter-btn active">全部</button>
+      <button class="filter-btn">智慧楼宇</button>
+      <button class="filter-btn">智慧工厂</button>
+      <button class="filter-btn">智慧能源</button>
+      <button class="filter-btn">智慧园区</button>
+    </div>
+    <div class="case-grid fade-in">
+      <!-- Case 1 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧楼宇</span>
+          <h4>某商业综合体智慧楼宇能源管理</h4>
+          <p>部署物联网传感器与能源管理平台，实时监测楼宇能耗数据，智能调控暖通空调系统，年均节能率达25%。</p>
+        </div>
+      </div>
+      <!-- Case 2 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1581094794329-c8112c4e5190?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧工厂</span>
+          <h4>大型制造企业设备远程监控项目</h4>
+          <p>为200余台核心生产设备安装智能网关与传感器，实现设备在线监测与预测性维护，故障停机时间降低60%。</p>
+        </div>
+      </div>
+      <!-- Case 3 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧能源</span>
+          <h4>分布式光伏电站智能运维平台</h4>
+          <p>接入全国50余座光伏电站，实现发电量实时监测、故障自动告警与远程运维，运维效率提升300%。</p>
+        </div>
+      </div>
+      <!-- Case 4 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧园区</span>
+          <h4>某科技产业园区综合管理平台</h4>
+          <p>整合园区安防、消防、能耗、停车等多个子系统，统一监控与联动管理，提升园区管理效率与安全水平。</p>
+        </div>
+      </div>
+      <!-- Case 5 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧工厂</span>
+          <h4>食品加工企业冷链环境监控</h4>
+          <p>在生产车间与冷库部署温湿度传感器，24小时实时监控环境数据，异常自动告警，保障食品安全合规。</p>
+        </div>
+      </div>
+      <!-- Case 6 -->
+      <div class="case-card">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop')"></div>
+        <div class="case-body">
+          <span class="case-tag">智慧楼宇</span>
+          <h4>写字楼智慧照明与环境控制</h4>
+          <p>通过物联网平台实现照明、空调、新风系统的智能联动控制，根据人流与环境数据自动调节，节能率超30%。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>开启您的智慧物联之旅</h2>
+    <p>联系我们，获取专属解决方案与免费技术咨询</p>
+    <a href="contact.html" class="btn btn-white btn-lg">获取方案</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff;font-size:18px;">一感智能科技</div>
+        <p>一感智能科技有限公司<br>以物联网技术赋能千行百业数字化转型。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品中心</h4>
+        <a href="products/iot-platform.html">物联网平台</a>
+        <a href="products/smart-gateway.html">智能网关</a>
+        <a href="products/sensor.html">传感设备</a>
+        <a href="products/energy.html">能源管理系统</a>
+      </div>
+      <div class="footer-col">
+        <h4>解决方案</h4>
+        <a href="cases.html">业务案例</a>
+        <a href="news.html">新闻服务</a>
+        <a href="support.html">在线支持</a>
+      </div>
+      <div class="footer-col">
+        <h4>关于我们</h4>
+        <a href="about.html">企业介绍</a>
+        <a href="contact.html">联系我们</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 一感智能科技有限公司</span>
+      <span>沪ICP备XXXXXXXX号</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
